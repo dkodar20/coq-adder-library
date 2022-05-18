@@ -172,6 +172,10 @@ Lemma nBitAdder_def1 : forall x : bin, nBitAdder (b0 x) (b0 x) (b0 s) = b0 (nBit
 Proof.
     Admitted.
 
+Lemma nBitAdder_def2 : forall x : bin, nBitAdder (b1 x) (b1 x) (b0 s) = b0 (nBitAdder x x (b1 s)).
+Proof.
+    Admitted.
+
 Lemma add_to_b1 : forall x : bin, bin_to_nat (b1 x) = S (add (bin_to_nat x) (bin_to_nat x)).
 Proof.
     intros.
@@ -193,10 +197,6 @@ Proof.
     rewrite -> bin_nat_bin.
     reflexivity.    
 Qed.
-
-Lemma nBitAdder_def2 : forall x : bin, nBitAdder (b1 x) (b1 x) (b0 s) = b0 (nBitAdder x x (b1 s)).
-Proof.
-    Admitted.
 
 Theorem adder_equal : forall x: bin, nBitAdder (x) (x) (b0 s) = nat_to_bin (add (bin_to_nat (x)) (bin_to_nat (x))).
 Proof.
