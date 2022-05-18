@@ -1,1 +1,1 @@
-# oelp-2022
+# Coq adder library
