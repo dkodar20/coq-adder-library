@@ -2,15 +2,15 @@ all: Makefile.coq
 	+make -f Makefile.coq all
 
 clean: Makefile.coq
-	+make -rv Makefile.coq clean
-	rm -rv *.vo
-	rm -rv *.vok
-	rm -rv *.vos
-	rm -rv *.glob
-	rm -rv Makefile.coq
-	rm -rv Makefile.coq.conf
+	+make -rf Makefile.coq clean
+	rm -rf *.vo
+	rm -rf *.vok
+	rm -rf *.vos
+	rm -rf *.glob
+	rm -rf Makefile.coq
+	rm -rf Makefile.coq.conf
 	rm -rf .*.aux
-	rm -rv .Makefile.coq.d
+	rm -rf .Makefile.coq.d
 
 Makefile.coq: Make
 	$(COQBIN)coq_makefile -f Make -o Makefile.coq
