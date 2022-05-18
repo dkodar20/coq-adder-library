@@ -8,3 +8,5 @@
 *.aux
 .*.aux
 .Makefile.coq.d
+Makefile.coq
+Makefile.coq.conf
