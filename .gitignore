@@ -1,0 +1,10 @@
+# Ignore the following files
+*.vo
+*.vok
+*.vos
+*.glob
+.vscode
+.vscode/*
+*.aux
+.*.aux
+.Makefile.coq.d
