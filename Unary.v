@@ -1,6 +1,3 @@
-Module UnaryOperations.
-
-
 Inductive nat : Type :=
     | u0
     | S (n: nat).
@@ -12,5 +9,3 @@ Fixpoint add (n: nat) (m: nat) : nat :=
     | u0 => m
     | S n' => S (add n' m)
     end.
-
-End UnaryOperations.

@@ -3,6 +3,10 @@ all: Makefile.coq
 
 clean: Makefile.coq
 	+make -rv Makefile.coq clean
+	rm -rv *.vo
+	rm -rv *.vok
+	rm -rv *.vos
+	rm -rv *.glob
 	rm -rv Makefile.coq
 	rm -rv Makefile.coq.conf
 	rm -rf .*.aux

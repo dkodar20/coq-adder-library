@@ -1,5 +1,6 @@
--R . CoqCircuits
+-R . CoqAdderLibrary
  
 ./Adder.v
 ./Unary.v
-./UnaryToBinary.v
+./UnaryBinaryConversions.v
+./AdderProof.v
